@@ -1,0 +1,286 @@
+/* media queries */
+@media(max-width:768px)
+{
+   
+   /* header section */
+    .header-content
+    {
+    margin-top: 20px;
+    }
+    .hulu-disney-logo
+    {
+        width: 180px;
+        height: auto;
+    }
+    .header-text-2
+    {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        margin:25px 60px;
+       text-align: center;
+
+    
+    }
+    .btn 
+{
+padding: 5px 50px;
+letter-spacing: .6px;
+font-size: 12px;
+}
+.header-link-1
+{
+margin: 10px;
+  
+
+
+}
+    
+.login-btn-li
+{
+    display: none;
+}
+.hamburger
+{
+    display: inline;
+  
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+background-color: #323843;
+
+    
+
+}
+.closemodal
+{
+    display: none;
+    background-color: blue;
+}
+.div1
+{
+    height: 2px;
+    width: 15px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.main-sub
+{
+flex-direction: column-reverse;
+}
+.header-text-3
+{
+    margin:8px 0px;
+}
+.header-text-4
+{
+    margin:1px;
+    font-weight: 500;
+
+
+}
+.logos
+{
+    margin: 5px;
+    width: 180px;
+    height: 40px;
+}
+
+.getallthree
+{
+    margin-top: 10px;
+    
+}
+
+.mainmain
+{
+   
+flex-direction: column;
+    
+}
+
+
+
+
+
+/* sub header section */
+
+/* section first media query starts here */
+
+
+.common-section
+{
+    /* border: 2px solid red; */
+     padding:10px;
+
+
+}
+common-section-text-1
+{
+   
+    margin: 0px;
+}
+.common-section-text-2
+{
+    font-size: 32px;
+}
+.common-section-text-3
+{
+font-size: 12px;
+margin: 5px 0px;
+padding: 0px 20px;
+}
+
+
+/* section first media query ends here */
+
+
+
+/* section second media query starts here */
+
+.covers{
+   
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    row-gap: 20px;
+    
+   
+
+}
+.covers>div 
+{
+    
+height: 250px;
+width: 160px;
+
+
+}
+
+.covers .cover-text
+{
+  
+   
+
+    top: 5px;
+    left: 5px;
+}
+.cover-text .sub-title
+{
+    font-size: 12px;
+    font-weight: 400;
+}
+.cover-text h3
+{
+    font-size: 16px;
+}
+
+
+/* section second media query ends here */
+
+
+
+
+
+
+
+/* Fourth section starts here */
+.section-4
+{
+
+    background: url(./img/live-sports-small.jpg);
+    background-size: contain;
+    
+}
+.section-4-content
+{
+    margin-top: 40px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    max-width: 500px;
+}
+.section-4-text-1
+{
+    font-size: 32px;
+   text-align: center;
+   
+}
+.sub-text
+{
+   text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+.live-sports-logo>div
+{
+   width: 60px;
+   height: 60px;
+   border-radius:100px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+   
+}
+.live-sports-logo img
+{
+  width: 40px;
+    
+    
+}
+.live-sports-logo
+{
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-4-legal-text
+{
+    margin-top: 20px;
+padding: 0px; 
+    text-align: left; 
+}
+ 
+
+
+/* Fourth section ends here */
+
+/* footer section starts here */
+.footer-lists
+{
+  flex-direction: column;
+}
+.last-row-menus ul
+
+{
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+/* footer section ends here */
+/* for details and summary tag section */
+.mob-details
+{
+    display: inline-flex;
+    margin-top: 10px;
+}
+.hidefordesktop
+{
+    display: none;
+}
+}
