@@ -14,3 +14,6 @@ index.html: The main homepage for the Hulu clone.
 css/: Directory containing the CSS files for the project.  
 img/: Directory containing images used on the website.
 
+## Reference and resources
+Official HULU website: https://www.hulu.com/
+Tutorial reference:Traversy Media Youtube channel
