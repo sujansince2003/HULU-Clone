@@ -1,3 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Rubik:wght@300;400;600;700&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;   /*avoid horizontal scroll*/
+    
+
+}
+
+ul
+{
+    list-style: none;
+}
+img
+{
+    width: 100%;
+}
+.headerclass
+{
+    position: relative;
+  height: 700px;
+    background-image: url("./img/header.jpg");
+    background-repeat: none;
+
+    background-position: center center;
+    background-size: cover;
+}
+.headerclass::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /*we want linear gradient to be 200px or little from top so*/
+    z-index: 1;    /*logo and nav goes behind the linear gradient so to show them in front of gradient we use z index we increse z index for nav and logo*/
+    background: linear-gradient(
+        156.82deg,
+        rgba(0, 0, 0, 0.6) 4.58%,
+        rgba(0, 0, 0, 0) 69.61%
+      ),
+      linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+.headerclass nav ul 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    z-index: 2;
+    position: relative;
+}
+.hamburger
+{
+    display: none;
+    
+}
+
+
+.hulu-logo
+{
+    
+    width: 60px;
+    height: 20px;
+
+}
+.hulu-disney-logo
+{
+    width: 400px;
+    height: 100px;
+}
+.login-btn
+{
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing:0.6px;
+    color:#A8AFBD;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.login-btn:hover
+{
+background-color: #323843;
+}
+
+
+/* header content starts here */
+.header-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+}
+.repeated-style-text
+{
+    text-transform: uppercase;
+color:#1CE783;
+font-size: 13px;
+font-weight: 400;
+letter-spacing: .6px;
+margin:25px 0px;
+}
+.header-text-2
+{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    margin:25px 0px;
+    color: white;
+
+}
+
+.btn 
+{
+    display: inline-block;
+    background-color: #1ce783;
+    color:black;
+    padding: 10px 300px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    
+
+}
+
+.btn-getthemboth:hover
+{
+    opacity: 0.6;
+    
+}
+.header-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.header-link-1
+{
+    color: white;
+    
+    margin: 10px 0px 20px 0px;
+    font-size: 14px;
+
+
+}
+.header-link-2
+{
+    
+    color: white;
+    font-size: 14px;
+
+}
+
+.main-sub
+{
+   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.header-text-3
+{
+    margin:8px 0px;
+}
+.header-text-4
+{
+    margin:1px;
+    font-weight: 500;
+
+}
+.logos
+{
+    width: 340px;
+    height: 76px;
+}
+.button-link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.getallthree
+{
+    background-color: transparent;
+    color:white;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+.getallthree:hover
+{
+    background-color: white;
+    color: black;
+}
+.buttonlink 
+{
+    margin: 2px;
+    color:#1CE783;
+}
+.mainmain
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%,0.6);
+  
+    padding: 24px 40px;
+    margin-top: 40px;
+}
+/* sub header */
+
+
+
+
+.common-section
+{
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 24px 240px;
+
+
+}
+common-section-text-1
+{
+    margin: 10px 0px;
+}
+.common-section-text-2
+{
+color: white;
+font-size: 48px;
+font-weight: 600;
+
+}
+
+.common-section-text-3
+{
+color: white;
+font-weight: 300;
+font-size: 16px;
+margin: 10px 0px;
+padding: 0px 60px;
+text-align: center;
+
+}
+
+
+/* second sections starts here */
+
+.covers
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    padding: 40px 90px 0px;
+    background-color: black ;
+}
+.covers>div   /*targeting the first all first divs inside the covers i.e cover1,2,3.. */
+{
+    height: 500px;    /*this will give height to each individual FIRST divs */
+    width: 300px;
+    
+    position: relative;    /*we want text inside these individual covers to be absoute*/
+}
+.covers .cover-grad
+{
+    /* ignore:::) we want gradient to cover full so we postion it to absolute,top left to zero so that i starts from top and left,width height 100% so that it covers full div xD */
+    position: absolute;
+    top: 0;  
+    left: 0;
+    width: 100%;
+    height: 100%;
+background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.cover-1
+{
+    background: url(./img/cover-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cover-2
+{
+    background: url(./img/cover-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cover-3
+{
+    background: url(./img/cover-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.cover-4
+{
+    background: url(./img/cover-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.covers .cover-text
+{
+  
+    position: absolute;
+    color: white;
+    text-align:left;
+
+    top: 20px;
+    left: 20px;
+}
+.cover-text .sub-title
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+.cover-text h3
+{
+    font-size: 24px;
+}
+/* second sections ends here */
+
+
+
+/* third section starts here */
+
+.common-legal-text
+{
+    color: white;
+    margin: 10px 0px;
+    padding: 0px 120px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.viewchannels
+{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.viewchannels a
+{
+    color: white;
+    font-size: 16px;
+
+}
+.down-arrow
+{
+    color: white;
+    font-size: 50px;
+    margin: 30px 0px;
+}
+
+/* third section ends here */
+
+
+/* Fourth section starts here */
+.section-4
+{
+   height: 800px;
+    background: url(./img/live-sports.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.section-4-content
+{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    max-width: 500px;
+}
+.section-4-text-1
+{
+    font-size: 48px;
+    font-weight: 600;
+   
+}
+.sub-text
+{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+.live-sports-logo>div
+{
+   width: 60px;
+   height: 60px;
+   border-radius:100px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 20px;
+
+
+   
+}
+.live-sports-logo img
+{
+  width: 40px;
+    
+    
+}
+.live-sports-logo
+{
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section-4-legal-text
+{
+    margin-top: 20px;
+padding: 0px; 
+    text-align: left; 
+}
+
+
+
+/* Fourth section ends here */
+
+/* footer section */
+footer
+{
+    background-color: #e8eaed;
+    color:#586174 ;
+}
+.footer-container
+{
+    max-width: 1100px;
+    padding:40px;
+    margin:auto;
+    
+}
+.footer-lists
+{
+   display: flex;
+   justify-content: space-between;
+}
+.footer-lists .list-head
+
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#272c34;
+}
+.hidden-li
+{
+    visibility: hidden;
+}
+
+.footer-lists a
+{
+    text-decoration: none;
+    color:#586174 ;
+    font-size: 14px;
+}
+.divider
+{
+    width: 100%; /*footer width is set to 1100px so it will take full width*/
+    height: 4px;
+    border-top:1px solid #586174;
+    margin: 30px 0px;
+}
+.social-icons img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+.last-row-menus ul
+
+{
+    margin-top: 25px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.last-row-menus ul a
+{
+    text-decoration: none;
+    color:#586174 ;
+}
+
+.mob-details
+{
+    display: none;
+}
+
+/* login modal window */
+.login-modal-container
+{
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    display: none;
+    z-index: 4;
+}
+.login-modal
+{
+    background-color:#323843;
+    height: 140px;
+    max-width: 275px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: none;
+    
+    
+    
+}
+
+.login-modal ul
+{
+   text-align: center;
+}
+.login-modal ul li
+{
+    margin-top: 10px;
+
+}
+.log-in-modal
+{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.login-modal li a
+{
+
+    color: #a8afbd;
+    text-decoration: none;
+}
+.get-all-three-login-modal-btn
+{
+    margin-top: 10px;
+    background-color: black;
+    padding: 12px 75px;
+    border: none;
+    border-radius: 8px;
+}
+
+.get-all-three-login-modal
+{
+    text-decoration: none;
+    color: white;
+    height: 100px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a8afbd;
+}
+
 /* media queries */
 @media(max-width:768px)
 {
@@ -19,9 +625,7 @@
         letter-spacing: .6px;
         margin:25px 60px;
        text-align: center;
-
-    
-    }
+}
     .btn 
 {
 padding: 5px 50px;
@@ -31,10 +635,7 @@ font-size: 12px;
 .header-link-1
 {
 margin: 10px;
-  
-
-
-}
+  }
     
 .login-btn-li
 {
@@ -43,21 +644,16 @@ margin: 10px;
 .hamburger
 {
     display: inline;
-  
     border: none;
     cursor: pointer;
     padding: 8px;
     border-radius: 8px;
 background-color: #323843;
-
-    
-
 }
 .closemodal
 {
-    display: none;
-    background-color: blue;
-}
+     display: none;
+    }
 .div1
 {
     height: 2px;
@@ -80,8 +676,6 @@ flex-direction: column-reverse;
 {
     margin:1px;
     font-weight: 500;
-
-
 }
 .logos
 {
